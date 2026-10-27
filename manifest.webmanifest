@@ -22,16 +22,53 @@
   ],
   "prefer_related_applications": false,
   "icons": [
-    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
-    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
-    { "src": "icons/monochrome-512.png", "sizes": "512x512", "type": "image/png", "purpose": "monochrome" }
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ],
   "screenshots": [
-    { "src": "screenshots/narrow-dashboard.webp", "sizes": "1080x2400", "type": "image/webp", "form_factor": "narrow", "label": "ภาพรวมรายรับ–รายจ่ายของเดือน พร้อมน้องหมูออม" },
-    { "src": "screenshots/narrow-history.webp", "sizes": "1080x2400", "type": "image/webp", "form_factor": "narrow", "label": "ค้นหาและกรองรายการย้อนหลัง" },
-    { "src": "screenshots/wide-dashboard.webp", "sizes": "1920x1200", "type": "image/webp", "form_factor": "wide", "label": "ภาพรวมบนคอมพิวเตอร์" }
+    {
+      "src": "screenshots/narrow-dashboard.webp",
+      "sizes": "1080x2400",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "ภาพรวมรายรับ–รายจ่ายของเดือน พร้อมน้องหมูออม"
+    },
+    {
+      "src": "screenshots/narrow-history.webp",
+      "sizes": "1080x2400",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "ค้นหาและกรองรายการย้อนหลัง"
+    },
+    {
+      "src": "screenshots/wide-dashboard.webp",
+      "sizes": "1920x1200",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "ภาพรวมบนคอมพิวเตอร์"
+    }
   ],
   "shortcuts": [
     {
@@ -39,7 +76,11 @@
       "short_name": "รายจ่าย",
       "url": "./?action=add-expense",
       "icons": [
-        { "src": "icons/sc-expense.png", "sizes": "96x96", "type": "image/png" }
+        {
+          "src": "icons/sc-expense.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
       ]
     },
     {
@@ -47,7 +88,11 @@
       "short_name": "รายรับ",
       "url": "./?action=add-income",
       "icons": [
-        { "src": "icons/sc-income.png", "sizes": "96x96", "type": "image/png" }
+        {
+          "src": "icons/sc-income.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
       ]
     },
     {
@@ -55,7 +100,11 @@
       "short_name": "ถ่ายสลิป",
       "url": "./?action=scan",
       "icons": [
-        { "src": "icons/sc-scan.png", "sizes": "96x96", "type": "image/png" }
+        {
+          "src": "icons/sc-scan.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
       ]
     },
     {
@@ -63,7 +112,11 @@
       "short_name": "สรุปเดือน",
       "url": "./?action=summary",
       "icons": [
-        { "src": "icons/sc-summary.png", "sizes": "96x96", "type": "image/png" }
+        {
+          "src": "icons/sc-summary.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
       ]
     }
   ],
