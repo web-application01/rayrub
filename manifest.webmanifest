@@ -1,0 +1,104 @@
+{
+  "id": "./",
+  "name": "ระบบรายรับและรายจ่ายตัวเอง",
+  "short_name": "รายรับรายจ่าย",
+  "description": "บันทึกรายรับ–รายจ่าย แนบสลิป และดูสรุปยอดรายเดือนได้ในที่เดียว",
+  "lang": "th",
+  "dir": "ltr",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "any",
+  "background_color": "#FBFAF6",
+  "theme_color": "#FBFAF6",
+  "categories": [
+    "finance",
+    "productivity",
+    "utilities"
+  ],
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/monochrome-512.png", "sizes": "512x512", "type": "image/png", "purpose": "monochrome" }
+  ],
+  "screenshots": [
+    { "src": "screenshots/narrow-dashboard.webp", "sizes": "1080x2400", "type": "image/webp", "form_factor": "narrow", "label": "ภาพรวมรายรับ–รายจ่ายของเดือน พร้อมน้องหมูออม" },
+    { "src": "screenshots/narrow-history.webp", "sizes": "1080x2400", "type": "image/webp", "form_factor": "narrow", "label": "ค้นหาและกรองรายการย้อนหลัง" },
+    { "src": "screenshots/wide-dashboard.webp", "sizes": "1920x1200", "type": "image/webp", "form_factor": "wide", "label": "ภาพรวมบนคอมพิวเตอร์" }
+  ],
+  "shortcuts": [
+    {
+      "name": "จดรายจ่าย",
+      "short_name": "รายจ่าย",
+      "url": "./?action=add-expense",
+      "icons": [
+        { "src": "icons/sc-expense.png", "sizes": "96x96", "type": "image/png" }
+      ]
+    },
+    {
+      "name": "จดรายรับ",
+      "short_name": "รายรับ",
+      "url": "./?action=add-income",
+      "icons": [
+        { "src": "icons/sc-income.png", "sizes": "96x96", "type": "image/png" }
+      ]
+    },
+    {
+      "name": "ถ่ายรูปสลิป",
+      "short_name": "ถ่ายสลิป",
+      "url": "./?action=scan",
+      "icons": [
+        { "src": "icons/sc-scan.png", "sizes": "96x96", "type": "image/png" }
+      ]
+    },
+    {
+      "name": "สรุปรายเดือน",
+      "short_name": "สรุปเดือน",
+      "url": "./?action=summary",
+      "icons": [
+        { "src": "icons/sc-summary.png", "sizes": "96x96", "type": "image/png" }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "./share-target",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "files": [
+        {
+          "name": "files",
+          "accept": [
+            "image/jpeg",
+            "image/png",
+            "image/webp",
+            "image/heic",
+            "image/heif",
+            "application/pdf",
+            ".jpg",
+            ".jpeg",
+            ".png",
+            ".webp",
+            ".heic",
+            ".pdf"
+          ]
+        }
+      ]
+    }
+  },
+  "launch_handler": {
+    "client_mode": [
+      "navigate-existing",
+      "auto"
+    ]
+  }
+}
